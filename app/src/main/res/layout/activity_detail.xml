@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:id="@+id/player_header_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:background="@layout/bg_player_header"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+    <!-- Song Title -->
+    <TextView
+        android:id="@+id/songTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#04b3d2"
+        android:textSize="16dp"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:text="The Good, The Bad And The Ugly"
+        android:layout_marginTop="10dp"/>
+    </LinearLayout>>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/my_seekBar"
+        android:scrollbarSize="20sp"
+        android:progressTint="@color/orange"
+        android:backgroundTint="@color/orange_light"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container"/>
+
+    <ImageButton
+        android:id="@+id/btn_play_id"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/my_seekBar"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_play"
+        android:background="@null"/>
+
+    <ImageButton
+        android:id="@+id/btn_backward_id"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/my_seekBar"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="36dp"
+        android:layout_toLeftOf="@+id/btn_play_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_backward"
+        android:background="@null"/>
+
+    <ImageButton
+        android:id="@+id/btn_forward_id"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/my_seekBar"
+        android:layout_toRightOf="@+id/btn_play_id"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="36dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_forward"
+        android:background="@null"/>
+
+    <Button
+        android:id="@+id/back_button_id"
+        android:layout_below="@+id/btn_forward_id"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--<SeekBar-->
+        <!--android:layout_below="@+id/container"-->
+        <!--android:paddingTop="6dp"-->
+        <!--android:id="@+id/songProgressBar"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:thumb="@drawable/seek_handler"-->
+        <!--android:progressDrawable="@drawable/seekbar_progress"-->
+        <!--android:paddingLeft="6dp"-->
+        <!--android:paddingRight="6dp"/>-->
+
+</RelativeLayout>
+
+
+    <!--<Button-->
+        <!--android:-->
+        <!--android:id="@+id/backButton"-->
+        <!--android:text="BACK"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
